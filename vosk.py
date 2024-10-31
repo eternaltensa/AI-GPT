@@ -4,7 +4,7 @@ from vosk import Model, KaldiRecognizer
 from googletrans import Translator
 import io
 
-TOKEN = '6899067249:AAE-G3aIBWM0UKRXVHmp5zsQkh3cqWDv5tE'
+TOKEN = 'token'
 
 
 bot = telebot.TeleBot(TOKEN)
