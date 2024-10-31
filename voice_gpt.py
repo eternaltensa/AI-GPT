@@ -5,7 +5,7 @@ from openai import OpenAI
 from googletrans import Translator
 import requests
 import json
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='key')
 recognizer = sr.Recognizer()
 translator = Translator()
 
@@ -13,7 +13,7 @@ microphone = sr.Microphone()
 
 
 with microphone as source:
-    print("Говорите что-нибудь...")
+    print("Скажите что-нибудь...")
     audio = recognizer.listen(source)
 
 
@@ -46,7 +46,7 @@ try:
 
     url = 'https://api.openai.com/v1/audio/speech'
     headers = {
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer token',
         'Content-Type': 'application/json',
     }
 
